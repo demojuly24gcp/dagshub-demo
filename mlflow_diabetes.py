@@ -45,9 +45,9 @@ X_test = fill.fit_transform(X_test)
 # Define the model hyperparameters
 params = {
     "solver": "lbfgs",
-    "max_iter": 1000,
+    "max_iter": 12,
     "multi_class": "auto",
-    "random_state": 8888,
+    "random_state": 123,
 }
 
 # Train the model
@@ -63,10 +63,15 @@ print(report)
 report_dict = classification_report(y_test, y_pred, output_dict=True)
 report_dict
 
+
+import dagshub
+dagshub.init(repo_owner='edurekajuly24gcp', repo_name='dagshub-demo', mlflow=True)
+
+
 import mlflow
 
-mlflow.set_experiment("LRexperimentdiabets")
-mlflow.set_tracking_uri(uri="http://127.0.0.1:5000/")
+mlflow.set_experiment("LRexperimentdiabets1")
+#mlflow.set_tracking_uri(uri="http://127.0.0.1:5000/")
 
 with mlflow.start_run():
     mlflow.log_params(params)
