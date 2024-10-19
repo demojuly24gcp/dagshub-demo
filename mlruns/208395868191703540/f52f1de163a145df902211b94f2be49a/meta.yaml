@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ankit_aj/Desktop/MLOPS-case_studies/Sep_demo_3/dagshub/dagshub-demo/mlruns/208395868191703540/f52f1de163a145df902211b94f2be49a/artifacts
+end_time: 1729353626234
+entry_point_name: ''
+experiment_id: '208395868191703540'
+lifecycle_stage: active
+run_id: f52f1de163a145df902211b94f2be49a
+run_name: auspicious-shoat-550
+run_uuid: f52f1de163a145df902211b94f2be49a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729353578180
+status: 3
+tags: []
+user_id: ankit_aj
