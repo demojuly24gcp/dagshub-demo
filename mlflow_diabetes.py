@@ -45,7 +45,7 @@ X_test = fill.fit_transform(X_test)
 # Define the model hyperparameters
 params = {
     "solver": "lbfgs",
-    "max_iter": 12,
+    "max_iter": 22,
     "multi_class": "auto",
     "random_state": 123,
 }
